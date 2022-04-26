@@ -1,0 +1,322 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
+    /* 
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f 
+*/
+    /* ================================
+         General Styling
+================================= */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    h1,
+    h3 {
+        font-family: 'Lora', serif;
+    }
+    
+    h2 {
+        font-family: 'Lora', serif;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    
+    p {
+        font-family: 'Work Sans', sans-serif;
+        color: #fff;
+        font-size: 1.2rem;
+        word-spacing: 4px;
+        line-height: 30px;
+        margin-top: 3vh;
+    }
+    /* ==============================
+            Header
+=============================== */
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    header section {
+        width: 40%;
+        text-align: center;
+        padding: 1px;
+    }
+    
+    header img {
+        width: 65%;
+    }
+    
+    header section h1 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    
+    header section h3 {
+        color: #2e2e2e;
+        font-size: 1.2rem;
+        word-spacing: 2px;
+        margin-top: 2vh;
+    }
+    /* ==============================
+            Main
+=============================== */
+    
+    main nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vh 1% 1vh 1%;
+        position: sticky;
+        top: 0;
+        background-color: #2e2e2e;
+    }
+    
+    nav img {
+        width: 60px;
+    }
+    
+    main nav div:nth-of-type(1) {
+        width: 70%;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    nav ul li {
+        /* margin-left: 12vw; */
+    }
+    
+    nav ul a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.1rem;
+    }
+    
+    main nav div:nth-of-type(1) {
+        display: block;
+    }
+    
+    main nav div {
+        display: none;
+    }
+    
+    main div span {
+        display: block;
+        background-color: white;
+        width: 50px;
+        height: 7px;
+        margin: 3px 0;
+        border-radius: 10px;
+    }
+    /* section -------------- */
+    /* section stroy-------------- */
+    
+    .section-story {
+        background-color: #2e2e2e;
+        display: flex;
+        align-items: center;
+        /* gap: 40px; */
+        padding: 17vh 0;
+    }
+    
+    .section-story img {
+        width: 60%;
+    }
+    
+    .section-story article {
+        padding: 0 1% 0 4%;
+    }
+    
+    .section-story article h2 {
+        text-align: center;
+    }
+    /* section featur-------------- */
+    
+    .section-featur {
+        background-color: #fff;
+        padding: 10vh 0;
+    }
+    
+    .section-featur h2 {
+        color: #2e2e2e;
+        text-align: center;
+    }
+    
+    .section-featur p {
+        color: #2e2e2e;
+        text-align: left;
+        padding: 0 30% 7vh 30%;
+    }
+    
+    .section-featur figure {
+        width: 400px;
+        text-align: center;
+        color: #2e2e2e;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 0.8rem;
+    }
+    
+    .section-featur img {
+        width: 100%;
+    }
+    
+    .section-fotos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 280px;
+        margin-top: 3vh;
+    }
+    
+    main section:nth-of-type(2) {
+        padding: 25vh 3% 25vh 3%;
+        background-color: #2e2e2e;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    main section:nth-of-type(2) article {
+        padding: 0 5% 0 7%;
+    }
+    
+    form {
+        padding: 0 6%;
+    }
+    
+    form label,
+    form input,
+    form button {
+        display: block;
+    }
+    
+    form label {
+        color: #fff;
+        font-family: 'Lora', serif;
+        margin-top: 2vh;
+    }
+    
+    form input,
+    form textarea {
+        width: 30vw;
+        padding: 4px;
+    }
+    
+    form button {
+        padding: 5px 10px;
+        margin-top: 4vh;
+    }
+    /* ==============================             Footer
+=============================== */
+    
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #1d2c2f;
+        color: #fff;
+        font-size: 0.9rem;
+        font-family: 'Lora', serif;
+        padding: 3vh 0;
+    }
+    
+    footer ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Lora', serif;
+        font-size: 0.9rem;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header img {
+            width: 80%;
+        }
+        header section h3 {
+            color: #2e2e2e;
+            font-size: 0.9rem;
+            margin: 2vh auto;
+        }
+        main nav div:nth-of-type(1) {
+            display: none;
+        }
+        main nav div {
+            display: block;
+        }
+        .section-story {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15vh 0;
+        }
+        .section-story img {
+            width: 80%;
+        }
+        .section-story article {
+            padding: 2vh 1% 0 4%;
+        }
+        .section-story article h2 {
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        main section:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input,
+        form textarea {
+            width: 300px;
+            padding: 4px;
+        }
+        form button {
+            padding: 5px 10px;
+            margin: 4vh auto;
+        }
+        footer,
+        footer a {
+            font-size: 0.8rem;
+        }
+    }
