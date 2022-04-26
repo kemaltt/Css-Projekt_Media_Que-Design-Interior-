@@ -30,10 +30,20 @@
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
-            <div>
+            <div onclick="showNav()" id="tab-nav">
                 <span></span>
                 <span></span>
                 <span></span>
+            </div>
+            <div id="slide-in-nav">
+                <!-- <span onclick="closeNav()">x</span> -->
+
+                <ul>
+                    <li><a onclick="closeNav()" href="#header">H&H </a></li>
+                    <li><a onclick="closeNav()" href="#story">OUR STORY</a></li>
+                    <li><a onclick="closeNav()" href="#design">DESIGNS</a></li>
+                    <li><a onclick="closeNav()" href="#contact">CONTACT</a></li>
+                </ul>
             </div>
         </nav>
         <section>
@@ -84,14 +94,14 @@
 
             </article>
 
-            <form action="" onclick="formSubmit()" onsubmit="return false">
+            <form action="" onsubmit="return false">
                 <label for="">Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter name" required>
                 <label for="">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter email" required>
                 <label for="">Message</label>
                 <textarea name="" id="text" cols="30" rows="2" placeholder="Optional"></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="formSubmit()">Submit</button>
 
             </form>
 

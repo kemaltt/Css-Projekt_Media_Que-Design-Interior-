@@ -17,6 +17,7 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
     
     html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
     
     h1,
@@ -99,10 +100,6 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
         list-style: none;
     }
     
-    nav ul li {
-        /* margin-left: 12vw; */
-    }
-    
     nav ul a {
         text-decoration: none;
         color: #fff;
@@ -113,18 +110,56 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
     main nav div:nth-of-type(1) {
         display: block;
     }
+    /* Tab Nav-------------------- */
     
-    main nav div {
+    main nav div:nth-of-type(2) {
         display: none;
     }
     
-    main div span {
+    main div:nth-of-type(2) span {
         display: block;
         background-color: white;
         width: 50px;
         height: 7px;
         margin: 3px 0;
         border-radius: 10px;
+        cursor: pointer;
+    }
+    /* Slide Nav ---------------------*/
+    
+    main nav div:nth-of-type(3) {
+        position: absolute;
+        background-color: #2e2e2e;
+        top: 0;
+        right: -100%;
+        left: 100%;
+        bottom: -300%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.5s linear;
+        visibility: visible;
+        display: none;
+    }
+    
+    main nav div:nth-of-type(3) ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+    }
+    
+    main nav div:nth-of-type(3) li {
+        padding: 2vh 0;
+    }
+    
+    main nav div:nth-of-type(3) span {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 6rem;
     }
     /* section -------------- */
     /* section stroy-------------- */
@@ -232,8 +267,9 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
         padding: 5px 10px;
         margin-top: 4vh;
     }
-    /* ==============================             Footer
-=============================== */
+    /* ============================== 
+                 Footer
+        =============================== */
     
     footer {
         display: flex;
@@ -277,7 +313,10 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
         main nav div:nth-of-type(1) {
             display: none;
         }
-        main nav div {
+        main nav div:nth-of-type(2) {
+            display: block;
+        }
+        main nav div:nth-of-type(3) {
             display: block;
         }
         .section-story {
