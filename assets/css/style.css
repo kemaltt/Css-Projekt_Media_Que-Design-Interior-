@@ -35,7 +35,8 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
     p {
         font-family: 'Work Sans', sans-serif;
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        text-align: justify;
         word-spacing: 4px;
         line-height: 30px;
         margin-top: 3vh;
@@ -173,11 +174,12 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
     }
     
     .section-story img {
-        width: 60%;
+        width: 55%;
     }
     
     .section-story article {
-        padding: 0 1% 0 4%;
+        width: 45%;
+        padding: 0 2% 0 4%;
     }
     
     .section-story article h2 {
@@ -264,8 +266,17 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
     }
     
     form button {
-        padding: 5px 10px;
+        padding: 6px 12px;
         margin-top: 4vh;
+        border: none;
+        font-size: 1rem;
+    }
+    
+    form button:hover {
+        cursor: pointer;
+        background-color: blueviolet;
+        border: none;
+        color: #fff;
     }
     /* ============================== 
                  Footer
@@ -326,10 +337,11 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
             padding: 15vh 0;
         }
         .section-story img {
-            width: 80%;
+            width: 100%;
         }
         .section-story article {
-            padding: 2vh 1% 0 4%;
+            padding: 4vh 4% 0 4%;
+            width: 100%;
         }
         .section-story article h2 {
             text-align: center;
@@ -340,10 +352,21 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
         p {
             font-size: 1rem;
         }
+        .section-featur p {
+            color: #2e2e2e;
+            text-align: center;
+            padding: 0 10% 7vh 10%;
+        }
         main section:nth-of-type(2) {
             display: flex;
             flex-direction: column;
             align-items: center;
+            /* width: 100%; */
+            /* padding: 25vh 3% 25vh 3%; */
+        }
+        main section:nth-of-type(2) article {
+            text-align: center;
+            padding: 0 5% 4vh 7%;
         }
         form input,
         form textarea {
@@ -357,5 +380,9 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
         footer,
         footer a {
             font-size: 0.8rem;
+        }
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
         }
     }
