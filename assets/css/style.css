@@ -17,6 +17,9 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
     
     html {
         scroll-behavior: smooth;
+    }
+    
+    body {
         overflow-x: hidden;
     }
     
@@ -125,42 +128,6 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
         margin: 3px 0;
         border-radius: 10px;
         cursor: pointer;
-    }
-    /* Slide Nav ---------------------*/
-    
-    main nav div:nth-of-type(3) {
-        position: absolute;
-        background-color: #2e2e2e;
-        top: 0;
-        right: -100%;
-        left: 100%;
-        bottom: -220%;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        transition: all 0.5s linear;
-        visibility: visible;
-        display: none;
-    }
-    
-    main nav div:nth-of-type(3) ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        text-align: center;
-    }
-    
-    main nav div:nth-of-type(3) li {
-        padding: 2vh 0;
-    }
-    
-    main nav div:nth-of-type(3) span {
-        font-size: 2rem;
-        color: #fff;
-        cursor: pointer;
-        margin-left: 6rem;
     }
     /* section -------------- */
     /* section stroy-------------- */
@@ -314,12 +281,16 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
             align-items: center;
         }
         header img {
-            width: 80%;
+            width: 100%;
+        }
+        header section h1 {
+            font-size: 4rem;
         }
         header section h3 {
             color: #2e2e2e;
             font-size: 0.9rem;
             margin: 2vh auto;
+            margin-bottom: 5vh;
         }
         main nav div:nth-of-type(1) {
             display: none;
@@ -381,8 +352,36 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
         footer a {
             font-size: 0.8rem;
         }
-        html {
-            scroll-behavior: smooth;
-            overflow-x: hidden;
+        /* Slide Nav ---------------------*/
+        main nav div:nth-of-type(3) {
+            position: absolute;
+            background-color: #2e2e2e;
+            top: 0;
+            right: -100%;
+            left: 100%;
+            bottom: -220%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            transition: all 0.5s linear;
+            visibility: visible;
+            display: block;
+        }
+        main nav div:nth-of-type(3) ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            text-align: center;
+        }
+        main nav div:nth-of-type(3) li {
+            padding: 2vh 0;
+        }
+        main nav div:nth-of-type(3) span {
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 6rem;
         }
     }
